@@ -3,7 +3,6 @@
 **CL2006 – Operating Systems Lab**
 **Spring 2026 | FAST-NUCES**
 
----
 
 ## Overview
 
@@ -18,7 +17,6 @@ The system integrates:
 * CPU scheduling algorithms
 * Memory allocation strategies
 
----
 
 ## Features
 
@@ -34,7 +32,6 @@ The system integrates:
 * Scheduling simulation after shutdown
 * Logging for memory and scheduling analysis
 
----
 
 ## Build Instructions
 
@@ -45,7 +42,6 @@ make test     # Run smoke test
 make clean    # Remove binaries and IPC artifacts
 ```
 
----
 
 ## Usage
 
@@ -63,7 +59,6 @@ make clean    # Remove binaries and IPC artifacts
 ./admissions --strategy worst
 ```
 
----
 
 ### Input Format
 
@@ -85,7 +80,6 @@ quit
 * Higher severity → higher priority
 * `quit` → terminates input and starts scheduling simulation
 
----
 
 ## System Architecture
 
@@ -109,7 +103,6 @@ quit
 
   * Handle discharge events via FIFO
 
----
 
 ## IPC Mechanisms Used
 
@@ -120,7 +113,6 @@ quit
 | Shared Memory     | Global ward state                 |
 | Signals           | Child process handling            |
 
----
 
 ## Threading Model
 
@@ -130,7 +122,6 @@ quit
 | Scheduler    | Assigns beds          |
 | Nurse (×3)   | Handles discharge     |
 
----
 
 ## OS Concepts Implemented
 
@@ -146,7 +137,6 @@ quit
 | Fragmentation        | Internal & External tracking     |
 | CPU Scheduling       | FCFS, SJF, Priority, Round Robin |
 
----
 
 ## Memory Management
 
@@ -155,7 +145,6 @@ quit
 * External fragmentation calculation
 * Paging simulation for internal fragmentation
 
----
 
 ## Scheduling Algorithms
 
@@ -164,7 +153,6 @@ quit
 * Priority Scheduling
 * Round Robin (RR)
 
----
 
 ## Project Structure
 
@@ -188,7 +176,6 @@ quit
 └── README.md
 ```
 
----
 
 ## Logs
 
@@ -196,8 +183,6 @@ quit
 | ----------------------- | ----------------------------- |
 | `logs/schedule_log.txt` | Scheduling timeline + metrics |
 | `logs/memory_log.txt`   | Fragmentation statistics      |
-
----
 
 ## Testing
 
@@ -213,7 +198,6 @@ make test
 ./scripts/stress_test.sh
 ```
 
----
 
 ## Memory Leak Detection
 
@@ -221,7 +205,6 @@ make test
 valgrind --leak-check=full ./admissions --strategy best
 ```
 
----
 
 ## Requirements
 
@@ -229,7 +212,6 @@ valgrind --leak-check=full ./admissions --strategy best
 * Linux environment (Ubuntu recommended)
 * Bash shell
 
----
 
 ## Key Highlights
 
@@ -238,16 +220,3 @@ valgrind --leak-check=full ./admissions --strategy best
 * Includes **multiple scheduling and allocation strategies**
 * Provides **logging and testing utilities**
 
----
-
-## Author
-
-**Ammar**
-BS Computer Science – FAST-NUCES
-
----
-
-If you want an even higher-tier submission, I can next:
-
-* add a **diagram (looks amazing in README)**
-* or compress this into a **1-minute viva explanation script** (super useful for lab exams)
