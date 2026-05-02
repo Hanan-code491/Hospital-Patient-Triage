@@ -1,7 +1,3 @@
-Here’s a **clean, professional, submission-ready README** you can directly use (no fluff, well-structured, and grader-friendly):
-
----
-
 # Hospital Patient Triage & Bed Allocator
 
 **CL2006 – Operating Systems Lab**
