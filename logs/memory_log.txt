@@ -1,0 +1,5 @@
+=== Memory Log  – Hospital Triage ===
+
+[2026-04-24 18:37:22] total_free=29 largest=3 ext_frag=89.7%
+[PAGING] patient=1 partition=0 care_units=3 pages=2 int_frag=1
+[2026-04-24 18:37:38] total_free=29 largest=3 ext_frag=89.7%

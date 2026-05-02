@@ -1,0 +1,70 @@
+=== Schedule Log – Hospital Triage ===
+
+
+=== FCFS Gantt ===
+t=0  [P1 Ahmed      burst=11]
+t=11  [P2 Sara       burst=9]
+t=20  [P3 Omar       burst=4]
+t=24  [P4 Fatima     burst=7]
+
+=== FCFS Metrics ===
+Patient      Burst  Wait   TAT    Finish
+Ahmed        11     0      11     11    
+Sara         9      11     20     20    
+Omar         4      20     24     24    
+Fatima       7      24     31     31    
+Average Wait=13.75  Average Turnaround=21.50
+
+
+=== Priority Scheduling Gantt ===
+t=0  [P1 Ahmed      pri=1 burst=11]
+t=11  [P4 Fatima     pri=2 burst=7]
+t=18  [P2 Sara       pri=3 burst=9]
+t=27  [P3 Omar       pri=5 burst=4]
+
+=== Priority Metrics ===
+Patient      Burst  Wait   TAT    Finish
+Ahmed        11     0      11     11    
+Sara         9      18     27     27    
+Omar         4      27     31     31    
+Fatima       7      11     18     18    
+Average Wait=14.00  Average Turnaround=21.75
+
+
+=== SJF Gantt ===
+t=0  [P3 Omar       burst=4]
+t=4  [P4 Fatima     burst=7]
+t=11  [P2 Sara       burst=9]
+t=20  [P1 Ahmed      burst=11]
+
+=== SJF Metrics ===
+Patient      Burst  Wait   TAT    Finish
+Ahmed        11     20     31     31    
+Sara         9      11     20     20    
+Omar         4      0      4      4     
+Fatima       7      4      11     11    
+Average Wait=8.75  Average Turnaround=16.50
+
+
+=== Round Robin (quantum=3) Gantt ===
+t=0  [P1 Ahmed      run=3 rem=8]
+t=3  [P2 Sara       run=3 rem=6]
+t=6  [P3 Omar       run=3 rem=1]
+t=9  [P4 Fatima     run=3 rem=4]
+t=12  [P1 Ahmed      run=3 rem=5]
+t=15  [P2 Sara       run=3 rem=3]
+t=18  [P3 Omar       run=1 rem=0]
+t=19  [P4 Fatima     run=3 rem=1]
+t=22  [P1 Ahmed      run=3 rem=2]
+t=25  [P2 Sara       run=3 rem=0]
+t=28  [P4 Fatima     run=1 rem=0]
+t=29  [P1 Ahmed      run=2 rem=0]
+
+=== RoundRobin Metrics ===
+Patient      Burst  Wait   TAT    Finish
+Ahmed        11     20     31     31    
+Sara         9      19     28     28    
+Omar         4      15     19     19    
+Fatima       7      22     29     29    
+Average Wait=19.00  Average Turnaround=26.75
+
