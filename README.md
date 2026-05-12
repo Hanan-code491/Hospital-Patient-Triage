@@ -1,7 +1,7 @@
 # Hospital Patient Triage & Bed Allocator
 
 **CL2006 – Operating Systems Lab**
-**Spring 2026 | FAST-NUCES**
+**Spring 2026 | FAST-NUCES
 
 
 ## Overview
